@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.3rem;
+
+}
+
+.portfolio__col {
+    width: 33.333333%;
+    padding: 1rem;
+
+    @media @tablet {
+        padding: .6rem;
+    }
+
+    @media @mobile {
+        width: 50%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+
+}
+
+.portfolio__item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px fade(@black, 25%);
+
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: 0 0 1.5rem fade(@black, 30%);
+
+    }
+}
+
+.portfolio__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.portfolio__content {
+    padding: 1rem 0.8rem;
+
+}
+
+.portfolio__sup {
+    font-size: 0.8rem;
+    color: @black;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5rem;
+
+}
+
+.portfolio__title {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.066rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.portfolio__data {
+
+
+}
+
+
+
+
+
+
+
+
