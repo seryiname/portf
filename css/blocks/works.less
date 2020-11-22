@@ -1,0 +1,33 @@
+// main: ../style.less
+
+.works {
+    margin: 2.8rem 0;
+
+    @media @tablet {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.works__nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 20rem;
+    height: 1rem;
+
+    margin-bottom: 1.4rem;
+
+    &-link {
+        text-decoration: none;
+        color: fade(@black, 70%);
+        font-size: 0.8rem;
+        &:hover {
+            text-decoration: underline;
+            color: fade(@black, 90%);
+        }
+    }
+}
